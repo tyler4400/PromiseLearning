@@ -1,4 +1,5 @@
 console.log('>>>>>>>started');
+
 new Promise(resolve => {
     setTimeout(() => {
         resolve('hello');
@@ -6,5 +7,7 @@ new Promise(resolve => {
     }, 2000);
 })
     .then(name => {
-        console.log(name + 'world');
+        console.log(name + ', world');
     });
+
+console.log('<<<<<<<ended');
